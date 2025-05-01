@@ -1,0 +1,25 @@
+country_event = {
+	id = 998999 #written to be just before the Flavor Mod events
+	title = "Texas, oh Texas..."
+	desc = "EVTDESC998999"
+	picture = "1854_Alamo"
+	
+	fire_only_once = yes
+
+	trigger = {
+		year = 1848
+		owns = 133
+		has_country_flag = new_world_nation
+		133 = { is_colonial = no }
+		war = no
+        NOT = { tag = MEX }
+	}
+
+	option = {
+		name = "Giddy-up, cowboy!"
+		prestige = 5
+		TEX_132 = { add_province_modifier = { name = texas_boom_small duration = 1825 } }
+	}
+}
+
+
